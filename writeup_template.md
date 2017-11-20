@@ -119,3 +119,6 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
+ My approach involved training a Linear support vector machine using LinearSVC from sklearn. This model used spatial binning, colour histograms and HOG feature vectors. This approach was worked reliably in identifying the cars.
+ A better algorithm could improve the pipeline on the sliding window area so as to be able to track each car as it passes in and out of frame effectively and without false positives.
+
